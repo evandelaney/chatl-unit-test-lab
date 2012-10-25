@@ -24,6 +24,8 @@
 		2A9BC8241620B84700F17668 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9BC7FC1620B84600F17668 /* Foundation.framework */; };
 		2A9BC82C1620B84700F17668 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A9BC82A1620B84700F17668 /* InfoPlist.strings */; };
 		2A9BC82F1620B84700F17668 /* HomepwnrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC82E1620B84700F17668 /* HomepwnrTests.m */; };
+		2AAADB841639E96400CB2D93 /* CHItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAADB831639E96400CB2D93 /* CHItemDetailViewController.m */; };
+		2AB30AC016276A9800348C1F /* CHItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB30ABF16276A9800348C1F /* CHItemDetailViewController.m */; };
 		2ADF48FC1625CE4800EE6AA7 /* CHItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF48FB1625CE4800EE6AA7 /* CHItem.m */; };
 		2ADF49031625F0F900EE6AA7 /* CHItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF49021625F0F900EE6AA7 /* CHItemStore.m */; };
 		2ADF490A1626095E00EE6AA7 /* CHItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF49091626095E00EE6AA7 /* CHItemsTableViewController.m */; };
@@ -65,6 +67,10 @@
 		2A9BC82B1620B84700F17668 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A9BC82D1620B84700F17668 /* HomepwnrTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomepwnrTests.h; sourceTree = "<group>"; };
 		2A9BC82E1620B84700F17668 /* HomepwnrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepwnrTests.m; sourceTree = "<group>"; };
+		2AAADB821639E96400CB2D93 /* CHItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemDetailViewController.h; sourceTree = "<group>"; };
+		2AAADB831639E96400CB2D93 /* CHItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItemDetailViewController.m; sourceTree = "<group>"; };
+		2AB30ABE16276A9800348C1F /* CHItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemDetailViewController.h; sourceTree = "<group>"; };
+		2AB30ABF16276A9800348C1F /* CHItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItemDetailViewController.m; sourceTree = "<group>"; };
 		2ADF48FA1625CE4800EE6AA7 /* CHItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItem.h; sourceTree = "<group>"; };
 		2ADF48FB1625CE4800EE6AA7 /* CHItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItem.m; sourceTree = "<group>"; };
 		2ADF49011625F0F900EE6AA7 /* CHItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemStore.h; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				2A29E29E1639CEF100615350 /* Items Table */,
+				2AAADB851639E96700CB2D93 /* Item Detail */,
 			);
 			name = "View Controller Tests";
 			sourceTree = "<group>";
@@ -217,8 +224,8 @@
 		2A9BC83A1620B8CA00F17668 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2ADF49081626095E00EE6AA7 /* CHItemsTableViewController.h */,
-				2ADF49091626095E00EE6AA7 /* CHItemsTableViewController.m */,
+				2AAADB7F1639E91000CB2D93 /* Items Table */,
+				2AAADB811639E91700CB2D93 /* Item Detail */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -230,6 +237,33 @@
 				2AEF090116261C8F0000ED7A /* Item Store */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2AAADB7F1639E91000CB2D93 /* Items Table */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF49081626095E00EE6AA7 /* CHItemsTableViewController.h */,
+				2ADF49091626095E00EE6AA7 /* CHItemsTableViewController.m */,
+			);
+			name = "Items Table";
+			sourceTree = "<group>";
+		};
+		2AAADB811639E91700CB2D93 /* Item Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2AB30ABE16276A9800348C1F /* CHItemDetailViewController.h */,
+				2AB30ABF16276A9800348C1F /* CHItemDetailViewController.m */,
+			);
+			name = "Item Detail";
+			sourceTree = "<group>";
+		};
+		2AAADB851639E96700CB2D93 /* Item Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2AAADB821639E96400CB2D93 /* CHItemDetailViewController.h */,
+				2AAADB831639E96400CB2D93 /* CHItemDetailViewController.m */,
+			);
+			name = "Item Detail";
 			sourceTree = "<group>";
 		};
 		2AE13C691639CDBB00502E65 /* Model Tests */ = {
@@ -395,6 +429,7 @@
 				2ADF48FC1625CE4800EE6AA7 /* CHItem.m in Sources */,
 				2ADF49031625F0F900EE6AA7 /* CHItemStore.m in Sources */,
 				2ADF490A1626095E00EE6AA7 /* CHItemsTableViewController.m in Sources */,
+				2AB30AC016276A9800348C1F /* CHItemDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +441,7 @@
 				2AE691D31639CC9D002D32E0 /* CHItemTests.m in Sources */,
 				2AE13C671639CDB500502E65 /* CHItemStoreTests.m in Sources */,
 				2A5857821639CEA5008CB062 /* CHItemsTableViewControllerTests.m in Sources */,
+				2AAADB841639E96400CB2D93 /* CHItemDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
