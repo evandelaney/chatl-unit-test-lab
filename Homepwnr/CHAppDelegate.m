@@ -22,16 +22,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self randomizeItemStore];
-
-    CHItemsTableViewController *itemsTVC = [[CHItemsTableViewController alloc] init];
+    
+    UINavigationController *navVC = (id)[[self window] rootViewController];
+    
+    CHItemsTableViewController *itemsTVC = (id)[navVC topViewController];
     [itemsTVC setItemStore:[self itemStore]];
-    
-    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:itemsTVC];
-    
-    UIWindow *mainWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [mainWindow setRootViewController:navVC];
-    [mainWindow makeKeyAndVisible];
-    [self setWindow:mainWindow];
     
     return YES;
 }

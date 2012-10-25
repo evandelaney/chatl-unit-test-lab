@@ -33,21 +33,6 @@ NSString * const kCHStoryboardIdentifierItems = @"Items Table View Controller";
     return [[self itemStore] allItems];
 }
 
-#pragma mark - Navigation Item
-
-- (UINavigationItem *)navigationItem
-{
-    UINavigationItem *n = [super navigationItem];
-    [n setTitle:NSLocalizedString(@"Homepwnr", @"Items TVC: Navigation Item: Title")];
-    
-    UIBarButtonItem *addBBI = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                                                                            target:self
-                                                                            action:@selector(addNewItem:)];
-    [n setRightBarButtonItem:addBBI];
-    
-    return n;
-}
-
 #pragma mark - View Lifecycle
 
 - (NSUInteger)supportedInterfaceOrientations
@@ -71,9 +56,6 @@ NSString * const kCHStoryboardIdentifierItems = @"Items Table View Controller";
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCHItemsCell];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCHItemsCell];
-    }
     
     CHItem *i = [self allItems][indexPath.row];
     
