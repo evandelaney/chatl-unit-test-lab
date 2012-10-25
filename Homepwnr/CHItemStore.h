@@ -14,4 +14,7 @@
 
 - (NSObject<CHItemProperties> *)createItem;
 
+- (void)deleteItem:(NSObject<CHItemProperties> *)item;
+#warning What other methods and properties will we need to migrate to Core Data and allow for the Items Table to be editable?
+
 @end

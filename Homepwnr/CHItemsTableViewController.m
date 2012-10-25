@@ -65,6 +65,12 @@ NSString * const kCHStoryboardIdentifierItems = @"Items Table View Controller";
     return cell;
 }
 
+#warning Allow reshuffling items
+- (void)tableView:(UITableView *)tableView
+moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
+      toIndexPath:(NSIndexPath *)toIndexPath
+{
+}
 
 #pragma mark - Table View Delegate
 
@@ -75,6 +81,28 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     NSLog(@"%@", selectedItem);
 }
 
+#warning Allow deleting items
+- (void)tableView:(UITableView *)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (editingStyle) {
+        case UITableViewCellEditingStyleDelete: {
+            
+//            CHItem *item = [self allItems][indexPath.row];
+//            [[self itemStore] deleteItem:item];
+#warning Don't forget to make the changes to the data source
+            
+            [tableView deleteRowsAtIndexPaths:@[ indexPath ]
+                             withRowAnimation:UITableViewRowAnimationFade];
+            break;
+        }
+        case UITableViewCellEditingStyleInsert:
+        case UITableViewCellEditingStyleNone:
+        default:
+            break;
+    }
+}
 
 #pragma mark - IBActions
 
@@ -82,7 +110,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [[self itemStore] createItem];
     
-    [[self tableView] reloadData];
+//    [[self tableView] reloadData];
+#warning Can you implement the table view change notifications?
 }
 
 @end

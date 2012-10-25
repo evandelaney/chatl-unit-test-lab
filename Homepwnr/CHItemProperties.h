@@ -4,6 +4,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class NSEntityDescription;
+
 @protocol CHItemProperties <NSObject>
 
 @property (copy,   nonatomic) NSString *itemName;
@@ -14,5 +16,12 @@
 - (id)initWithItemName:(NSString *)name
         valueInDollars:(int)value
           serialNumber:(NSString *)sNumber;
+
+@optional
+
+#warning Migrate CHItems over to NSManagedObjects
+
++ (void)setEntityDescription:(NSEntityDescription *)ed;
++ (NSEntityDescription *)entityDescription;
 
 @end

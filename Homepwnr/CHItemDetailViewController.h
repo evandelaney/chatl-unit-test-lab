@@ -6,6 +6,7 @@
 
 @class CHItem;
 
+#warning Migrate this to a UITableViewController or UICollectionViewController
 @interface CHItemDetailViewController : UIViewController
 
 @property (strong, nonatomic) CHItem *item;

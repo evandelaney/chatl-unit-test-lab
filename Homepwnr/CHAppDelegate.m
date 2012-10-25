@@ -23,6 +23,7 @@
 {
     [self randomizeItemStore];
     
+#warning Bifurcate app and subclass items table and items detail view controllers
     UINavigationController *navVC = (id)[[self window] rootViewController];
     
     CHItemsTableViewController *itemsTVC = (id)[navVC topViewController];
