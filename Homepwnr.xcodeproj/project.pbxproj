@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A5857821639CEA5008CB062 /* CHItemsTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5857811639CEA5008CB062 /* CHItemsTableViewControllerTests.m */; };
 		2A9BC7FB1620B84600F17668 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9BC7FA1620B84600F17668 /* UIKit.framework */; };
 		2A9BC7FD1620B84600F17668 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9BC7FC1620B84600F17668 /* Foundation.framework */; };
 		2A9BC7FF1620B84600F17668 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9BC7FE1620B84600F17668 /* CoreGraphics.framework */; };
@@ -18,7 +19,6 @@
 		2A9BC8111620B84600F17668 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A9BC8101620B84600F17668 /* Default-568h@2x.png */; };
 		2A9BC8141620B84600F17668 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A9BC8121620B84600F17668 /* MainStoryboard_iPhone.storyboard */; };
 		2A9BC8171620B84600F17668 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A9BC8151620B84600F17668 /* MainStoryboard_iPad.storyboard */; };
-		2A9BC81A1620B84600F17668 /* CHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC8191620B84600F17668 /* CHViewController.m */; };
 		2A9BC8221620B84700F17668 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9BC8211620B84700F17668 /* SenTestingKit.framework */; };
 		2A9BC8231620B84700F17668 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9BC7FA1620B84600F17668 /* UIKit.framework */; };
 		2A9BC8241620B84700F17668 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9BC7FC1620B84600F17668 /* Foundation.framework */; };
@@ -26,6 +26,7 @@
 		2A9BC82F1620B84700F17668 /* HomepwnrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC82E1620B84700F17668 /* HomepwnrTests.m */; };
 		2ADF48FC1625CE4800EE6AA7 /* CHItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF48FB1625CE4800EE6AA7 /* CHItem.m */; };
 		2ADF49031625F0F900EE6AA7 /* CHItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF49021625F0F900EE6AA7 /* CHItemStore.m */; };
+		2ADF490A1626095E00EE6AA7 /* CHItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF49091626095E00EE6AA7 /* CHItemsTableViewController.m */; };
 		2AE13C671639CDB500502E65 /* CHItemStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE13C661639CDB500502E65 /* CHItemStoreTests.m */; };
 		2AE691D31639CC9D002D32E0 /* CHItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE691D21639CC9D002D32E0 /* CHItemTests.m */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A5857801639CEA5008CB062 /* CHItemsTableViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemsTableViewControllerTests.h; sourceTree = "<group>"; };
+		2A5857811639CEA5008CB062 /* CHItemsTableViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItemsTableViewControllerTests.m; sourceTree = "<group>"; };
 		2A9BC7F61620B84600F17668 /* Homepwnr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwnr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9BC7FA1620B84600F17668 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2A9BC7FC1620B84600F17668 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,8 +59,6 @@
 		2A9BC8101620B84600F17668 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2A9BC8131620B84600F17668 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		2A9BC8161620B84600F17668 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		2A9BC8181620B84600F17668 /* CHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHViewController.h; sourceTree = "<group>"; };
-		2A9BC8191620B84600F17668 /* CHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHViewController.m; sourceTree = "<group>"; };
 		2A9BC8201620B84700F17668 /* HomepwnrTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepwnrTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9BC8211620B84700F17668 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2A9BC8291620B84700F17668 /* HomepwnrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomepwnrTests-Info.plist"; sourceTree = "<group>"; };
@@ -69,6 +70,8 @@
 		2ADF49011625F0F900EE6AA7 /* CHItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemStore.h; sourceTree = "<group>"; };
 		2ADF49021625F0F900EE6AA7 /* CHItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItemStore.m; sourceTree = "<group>"; };
 		2ADF49071626053800EE6AA7 /* CHItemProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHItemProperties.h; sourceTree = "<group>"; };
+		2ADF49081626095E00EE6AA7 /* CHItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemsTableViewController.h; sourceTree = "<group>"; };
+		2ADF49091626095E00EE6AA7 /* CHItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItemsTableViewController.m; sourceTree = "<group>"; };
 		2AE13C651639CDB500502E65 /* CHItemStoreTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemStoreTests.h; sourceTree = "<group>"; };
 		2AE13C661639CDB500502E65 /* CHItemStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItemStoreTests.m; sourceTree = "<group>"; };
 		2AE691D11639CC9D002D32E0 /* CHItemTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemTests.h; sourceTree = "<group>"; };
@@ -99,6 +102,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A29E29C1639CEE500615350 /* View Controller Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2A29E29E1639CEF100615350 /* Items Table */,
+			);
+			name = "View Controller Tests";
+			sourceTree = "<group>";
+		};
+		2A29E29E1639CEF100615350 /* Items Table */ = {
+			isa = PBXGroup;
+			children = (
+				2A5857801639CEA5008CB062 /* CHItemsTableViewControllerTests.h */,
+				2A5857811639CEA5008CB062 /* CHItemsTableViewControllerTests.m */,
+			);
+			name = "Items Table";
+			sourceTree = "<group>";
+		};
 		2A9BC7EB1620B84600F17668 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +179,7 @@
 			children = (
 				2A9BC82D1620B84700F17668 /* HomepwnrTests.h */,
 				2A9BC82E1620B84700F17668 /* HomepwnrTests.m */,
+				2A29E29C1639CEE500615350 /* View Controller Tests */,
 				2AE13C691639CDBB00502E65 /* Model Tests */,
 				2A9BC8281620B84700F17668 /* Supporting Files */,
 			);
@@ -196,8 +217,8 @@
 		2A9BC83A1620B8CA00F17668 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2A9BC8181620B84600F17668 /* CHViewController.h */,
-				2A9BC8191620B84600F17668 /* CHViewController.m */,
+				2ADF49081626095E00EE6AA7 /* CHItemsTableViewController.h */,
+				2ADF49091626095E00EE6AA7 /* CHItemsTableViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -371,9 +392,9 @@
 			files = (
 				2A9BC8071620B84600F17668 /* main.m in Sources */,
 				2A9BC80B1620B84600F17668 /* CHAppDelegate.m in Sources */,
-				2A9BC81A1620B84600F17668 /* CHViewController.m in Sources */,
 				2ADF48FC1625CE4800EE6AA7 /* CHItem.m in Sources */,
 				2ADF49031625F0F900EE6AA7 /* CHItemStore.m in Sources */,
+				2ADF490A1626095E00EE6AA7 /* CHItemsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +405,7 @@
 				2A9BC82F1620B84700F17668 /* HomepwnrTests.m in Sources */,
 				2AE691D31639CC9D002D32E0 /* CHItemTests.m in Sources */,
 				2AE13C671639CDB500502E65 /* CHItemStoreTests.m in Sources */,
+				2A5857821639CEA5008CB062 /* CHItemsTableViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

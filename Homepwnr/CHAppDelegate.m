@@ -5,6 +5,7 @@
 #import "CHAppDelegate.h"
 
 #import "CHItemStore.h"
+#import "CHItemsTableViewController.h"
 
 //////////////////////////
 
@@ -21,10 +22,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self randomizeItemStore];
+
+    CHItemsTableViewController *itemsTVC = [[CHItemsTableViewController alloc] init];
+    [itemsTVC setItemStore:[self itemStore]];
     
-    for (NSObject *o in [[self itemStore] allItems]) {
-        NSLog(@"%@", o);
-    }
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:itemsTVC];
+    
+    UIWindow *mainWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [mainWindow setRootViewController:navVC];
+    [mainWindow makeKeyAndVisible];
+    [self setWindow:mainWindow];
     
     return YES;
 }
