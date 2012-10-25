@@ -24,6 +24,10 @@
 		2A9BC8241620B84700F17668 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9BC7FC1620B84600F17668 /* Foundation.framework */; };
 		2A9BC82C1620B84700F17668 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A9BC82A1620B84700F17668 /* InfoPlist.strings */; };
 		2A9BC82F1620B84700F17668 /* HomepwnrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BC82E1620B84700F17668 /* HomepwnrTests.m */; };
+		2ADF48FC1625CE4800EE6AA7 /* CHItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF48FB1625CE4800EE6AA7 /* CHItem.m */; };
+		2ADF49031625F0F900EE6AA7 /* CHItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF49021625F0F900EE6AA7 /* CHItemStore.m */; };
+		2AE13C671639CDB500502E65 /* CHItemStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE13C661639CDB500502E65 /* CHItemStoreTests.m */; };
+		2AE691D31639CC9D002D32E0 /* CHItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE691D21639CC9D002D32E0 /* CHItemTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,15 @@
 		2A9BC82B1620B84700F17668 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A9BC82D1620B84700F17668 /* HomepwnrTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomepwnrTests.h; sourceTree = "<group>"; };
 		2A9BC82E1620B84700F17668 /* HomepwnrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepwnrTests.m; sourceTree = "<group>"; };
+		2ADF48FA1625CE4800EE6AA7 /* CHItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItem.h; sourceTree = "<group>"; };
+		2ADF48FB1625CE4800EE6AA7 /* CHItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItem.m; sourceTree = "<group>"; };
+		2ADF49011625F0F900EE6AA7 /* CHItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemStore.h; sourceTree = "<group>"; };
+		2ADF49021625F0F900EE6AA7 /* CHItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItemStore.m; sourceTree = "<group>"; };
+		2ADF49071626053800EE6AA7 /* CHItemProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHItemProperties.h; sourceTree = "<group>"; };
+		2AE13C651639CDB500502E65 /* CHItemStoreTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemStoreTests.h; sourceTree = "<group>"; };
+		2AE13C661639CDB500502E65 /* CHItemStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItemStoreTests.m; sourceTree = "<group>"; };
+		2AE691D11639CC9D002D32E0 /* CHItemTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemTests.h; sourceTree = "<group>"; };
+		2AE691D21639CC9D002D32E0 /* CHItemTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItemTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +159,7 @@
 			children = (
 				2A9BC82D1620B84700F17668 /* HomepwnrTests.h */,
 				2A9BC82E1620B84700F17668 /* HomepwnrTests.m */,
+				2AE13C691639CDBB00502E65 /* Model Tests */,
 				2A9BC8281620B84700F17668 /* Supporting Files */,
 			);
 			path = HomepwnrTests;
@@ -191,8 +205,56 @@
 		2A9BC83B1620B8D100F17668 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2AEF090316261C990000ED7A /* Item */,
+				2AEF090116261C8F0000ED7A /* Item Store */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2AE13C691639CDBB00502E65 /* Model Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE13C6A1639CDC400502E65 /* Item Tests */,
+				2AE13C6B1639CDCC00502E65 /* Item Store Tests */,
+			);
+			name = "Model Tests";
+			sourceTree = "<group>";
+		};
+		2AE13C6A1639CDC400502E65 /* Item Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE691D11639CC9D002D32E0 /* CHItemTests.h */,
+				2AE691D21639CC9D002D32E0 /* CHItemTests.m */,
+			);
+			name = "Item Tests";
+			sourceTree = "<group>";
+		};
+		2AE13C6B1639CDCC00502E65 /* Item Store Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE13C651639CDB500502E65 /* CHItemStoreTests.h */,
+				2AE13C661639CDB500502E65 /* CHItemStoreTests.m */,
+			);
+			name = "Item Store Tests";
+			sourceTree = "<group>";
+		};
+		2AEF090116261C8F0000ED7A /* Item Store */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF49011625F0F900EE6AA7 /* CHItemStore.h */,
+				2ADF49021625F0F900EE6AA7 /* CHItemStore.m */,
+			);
+			name = "Item Store";
+			sourceTree = "<group>";
+		};
+		2AEF090316261C990000ED7A /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF49071626053800EE6AA7 /* CHItemProperties.h */,
+				2ADF48FA1625CE4800EE6AA7 /* CHItem.h */,
+				2ADF48FB1625CE4800EE6AA7 /* CHItem.m */,
+			);
+			name = Item;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +372,8 @@
 				2A9BC8071620B84600F17668 /* main.m in Sources */,
 				2A9BC80B1620B84600F17668 /* CHAppDelegate.m in Sources */,
 				2A9BC81A1620B84600F17668 /* CHViewController.m in Sources */,
+				2ADF48FC1625CE4800EE6AA7 /* CHItem.m in Sources */,
+				2ADF49031625F0F900EE6AA7 /* CHItemStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9BC82F1620B84700F17668 /* HomepwnrTests.m in Sources */,
+				2AE691D31639CC9D002D32E0 /* CHItemTests.m in Sources */,
+				2AE13C671639CDB500502E65 /* CHItemStoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +560,7 @@
 				2A9BC8341620B84700F17668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A9BC8351620B84700F17668 /* Build configuration list for PBXNativeTarget "HomepwnrTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +569,7 @@
 				2A9BC8371620B84700F17668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
