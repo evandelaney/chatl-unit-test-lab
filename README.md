@@ -1,4 +1,4 @@
-#CocoaHeads Atlanta - Unit Test Lab
+# CocoaHeads Atlanta - Unit Test Lab
 
 The repo for the unit test lab is set up in such a way that each branch is a new "idea."
 It's a bit of SCM spaghetti, but you will focus your git-foo on the stage-one through 
